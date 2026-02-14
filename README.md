@@ -1,73 +1,100 @@
-# Welcome to your Lovable project
+# SRM DCC Placement Portal
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The **SRM Directorate of Career Centre (DCC) Placement Portal** is a modern, responsive web application designed to streamline the placement process for students. It provides an intuitive interface for students to browse visiting companies, view recruitment details, and access placement statistics.
 
-## How can I edit this code?
+Built with performance and user experience in mind, the portal features a clean, professional design aligned with SRM's branding, offering real-time filtering and search capabilities.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Company Dashboard**: Browse a comprehensive list of companies visiting for campus recruitment.
+- **Advanced Search & Filtering**: Quickly find companies by name, industry, or role. Filter by categories (e.g., Dream, Super Dream, Marquee).
+- **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
+- **Modern UI/UX**: Features a premium interface with glassmorphism effects, smooth animations, and a focus on content density.
+- **Data Visualization**: (Planned) Visual insights into placement statistics and trends.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend Framework**: [React](https://reactjs.org/) (v18)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) / [Radix UI](https://www.radix-ui.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **State Management**: React Hooks & Context
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd PlacementPortal
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Running the Application
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+To start the development server:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will typically handle requests at `http://localhost:8080` (or the port shown in your terminal).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Building for Production
 
-**Use GitHub Codespaces**
+To create an optimized production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+This will generate the static assets in the `dist` directory. You can preview the production build locally using:
 
-This project is built with:
+```bash
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+d:\PlacementPortal\
+├── public/              # Static assets (images, icons)
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── data/           # Mock data and types
+│   ├── pages/          # Application views/routes
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Entry point
+├── index.html          # HTML entry point
+├── package.json        # Project metadata and dependencies
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── vite.config.ts      # Vite configuration
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Contributing
 
-## Can I connect a custom domain to my Lovable project?
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is proprietary software of the Directorate of Career Centre, SRM Institute of Science and Technology.
