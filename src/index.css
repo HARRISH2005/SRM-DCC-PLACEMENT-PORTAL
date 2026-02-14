@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Strict Minimal Theme */
+    --background: 0 0% 100%;
+    /* #ffffff */
+    --foreground: 220 25% 10%;
+    /* #111827 */
+
+    --card: 0 0% 100%;
+    /* #ffffff */
+    --card-foreground: 220 25% 10%;
+    /* #111827 */
+
+    --popover: 0 0% 100%;
+    /* #ffffff */
+    --popover-foreground: 220 25% 10%;
+    /* #111827 */
+
+    --primary: 210 100% 30%;
+    /* #004c97 SRM Blue */
+    --primary-foreground: 0 0% 100%;
+    /* #ffffff */
+
+    --secondary: 210 40% 96%;
+    /* #f0f9ff */
+    --secondary-foreground: 220 25% 10%;
+    /* #111827 */
+
+    --muted: 210 20% 96%;
+    /* #f3f4f6 */
+    --muted-foreground: 220 10% 45%;
+    /* #6b7280 */
+
+    --accent: 48 100% 50%;
+    /* #fecb00 SRM Gold */
+    --accent-foreground: 220 25% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    /* #e5e7eb */
+    --input: 220 13% 91%;
+    /* #e5e7eb */
+    --ring: 210 100% 30%;
+    /* SRM Blue */
+
+    --radius: 0.5rem;
+
+    /* Custom tokens mapped to new system */
+    --surface-elevated: 0 0% 100%;
+    --surface-sunken: 210 20% 98%;
+    /* #f9fafb */
+    --text-tertiary: 220 10% 60%;
+
+    --badge-marquee: 340 75% 50%;
+    --badge-super-dream: 48 100% 50%;
+    /* Gold */
+    --badge-dream: 210 100% 40%;
+    /* Blue */
+    --badge-core: 160 50% 40%;
+    --badge-it: 200 60% 45%;
+    --badge-startup: 30 80% 50%;
+    --chart-line: 210 100% 30%;
+    --chart-area: 210 100% 90%;
+    --highlight: 48 100% 50%;
+    --compensation: 145 50% 38%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 10%;
+    --sidebar-primary: 210 100% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 220 25% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 210 100% 30%;
+  }
+
+  .dark {
+    /* Minimal dark mode */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 48 100% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 210 100% 50%;
+
+    --surface-elevated: 217 32% 17%;
+    --surface-sunken: 222 47% 9%;
+    --text-tertiary: 215 20% 65%;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: 210 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
